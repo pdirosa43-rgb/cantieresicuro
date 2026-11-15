@@ -1,0 +1,20 @@
+CANTIERE SICURO - VERSIONE SINCRONIZZAZIONE (BETA)
+
+1. Fai una copia del vecchio ZIP e usa Esporta backup JSON dall'app attuale.
+2. Supabase > SQL Editor: esegui SUPABASE_SETUP.sql.
+3. Supabase > Authentication > Users: crea il tuo utente email/password (o abilita registrazione e conferma email).
+4. Supabase > Settings > API Keys: copia solo la publishable key (sb_publishable_...).
+5. URL progetto: https://<project-ref>.supabase.co (non la pagina dashboard).
+6. Carica su GitHub tutti i file della cartella, sovrascrivendo quelli originali; usa GitHub Pages su branch main / root.
+7. Apri il sito una volta online. In Configura sincronizzazione inserisci URL, publishable key, email e password.
+8. Apri anche sul secondo dispositivo e accedi con le stesse credenziali.
+
+AVVERTENZE IMPORTANTI
+- Sincronizzazione a snapshot dell'intero archivio: non modificare contemporaneamente da due dispositivi.
+- Se due dispositivi modificano offline lo stesso archivio, l'app blocca la sincronizzazione del secondo; non effettua un merge automatico. Esporta i backup per recuperare i dati.
+- Allegati e foto sono salvati come data URL nello snapshot JSON: per archivi grandi occorre migrare a Supabase Storage.
+- Offline funziona per l'interfaccia gia' visitata e i dati locali; login iniziale e sincronizzazione richiedono rete.
+- Il file JavaScript Supabase e' caricato da CDN e non e' disponibile al primo avvio offline.
+- Le copie locali restano sul dispositivo anche dopo logout: non usare dispositivi condivisi senza protezioni.
+- La sincronizzazione cloud non sostituisce i backup.
+- La versione e' una beta da collaudare con dati di prova, non un sistema certificato per documenti riservati o firme qualificate.
