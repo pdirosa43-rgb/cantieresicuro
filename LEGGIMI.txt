@@ -1,0 +1,11 @@
+CantiereSicuro CSE — installazione Android (PWA)
+
+Questi file NON sono un APK. Per installare come app Android:
+1. Pubblica TUTTI i file e la cartella icons su un sito HTTPS (es. GitHub Pages).
+2. Da Android apri in Chrome il link HTTPS del sito.
+3. Apri menu ⋮ > Installa app (o Aggiungi a schermata Home).
+4. Dopo la prima apertura online, l’interfaccia è disponibile anche offline.
+
+Per GitHub Pages: crea un repository, carica index.html, manifest.webmanifest, sw.js e icons/ (mantieni i percorsi); Settings > Pages > Deploy from a branch > main /root; apri l’URL pubblicato.
+
+IMPORTANTE: i dati e gli allegati sono salvati nel browser sul dispositivo, NON sincronizzati. Usa regolarmente il Backup. Non disinstallare o cancellare dati del sito senza avere un backup. Le firme grafiche non sono firme elettroniche qualificate. Non caricare su hosting pubblico documenti riservati: i file del pacchetto sono solo il codice dell'app; i documenti caricati nell'app restano localmente nel browser.
